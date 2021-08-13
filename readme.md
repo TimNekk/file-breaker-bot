@@ -1,4 +1,4 @@
-![logo](assets/logo.png)
+[![logo](assets/logo.png)](https://t.me/FileBreakerBot)
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/timnekk/file-breaker-bot?style=flat" alt="release"/>
