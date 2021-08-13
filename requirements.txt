@@ -1,2 +1,4 @@
 aiogram
 environs
+tortoise-orm
+asyncpg
