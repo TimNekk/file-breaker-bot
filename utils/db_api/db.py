@@ -10,7 +10,8 @@ async def clear_tables():
 
 async def add_user(user_id: int):
     try:
-        return await User.create(id=user_id)
+        await User.create(id=user_id)
+        return await get_user(user_id)
     except IntegrityError:
         pass
 
@@ -19,3 +20,9 @@ async def get_user(user_id: int):
     user = await User.get_or_none(id=user_id).values()
     if user:
         return UserData(**user[0])
+
+
+async def get_users():
+    users = await User.all().values()
+    if users:
+        return list(map(lambda user: UserData(**user), users))
