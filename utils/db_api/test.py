@@ -23,7 +23,7 @@ async def test():
     print(f"Получил пользователя: {user}")
     await user.add_uses()
     print(f"Обновил пользователя: {user}")
-    await user.add_uses_other()
+    await user.add_uses()
     print(f"Обновил пользователя: {user}")
     await user.ban()
     print(f"Обновил пользователя: {user}")
